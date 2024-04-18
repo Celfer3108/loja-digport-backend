@@ -5,6 +5,8 @@ import (
 )
 
 func main() {
+	livroscatalago := catalog()
 
-	fmt.Println("Hello World")
+	fmt.Printf("Catalago de livros da Bookworm store: %+v", livroscatalago)
+
 }
