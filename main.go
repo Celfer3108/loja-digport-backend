@@ -8,5 +8,5 @@ func main() {
 	livroscatalago := catalog()
 
 	fmt.Printf("Catalago de livros da Bookworm store: %+v", livroscatalago)
-
+	StartServer()
 }

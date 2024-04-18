@@ -9,7 +9,7 @@ func catalog() []model.Produto {
 		{
 			Nome:       "A paciente silenciosa",
 			Autor:      "Alex Michaelides",
-			Genero:     "Romance",
+			Genero:     "Thriller",
 			Editora:    "Record",
 			ID:         0001,
 			Quantidade: 3,
@@ -20,7 +20,7 @@ func catalog() []model.Produto {
 		{
 			Nome:       "Daisy Jones and the six",
 			Autor:      "Alex Michaelides",
-			Genero:     "Romance",
+			Genero:     "Drama",
 			Editora:    "aralela",
 			ID:         0002,
 			Quantidade: 5,
@@ -30,7 +30,7 @@ func catalog() []model.Produto {
 		{
 			Nome:       "O iluminado",
 			Autor:      "Stephen King",
-			Genero:     "Ficção",
+			Genero:     "Suspense",
 			Editora:    "Suma",
 			ID:         0003,
 			Quantidade: 2,
@@ -51,7 +51,7 @@ func catalog() []model.Produto {
 		{
 			Nome:       "Ken Follet",
 			Autor:      "Nunca",
-			Genero:     "Romance",
+			Genero:     "Drama",
 			Editora:    "Arqueiro",
 			ID:         0005,
 			Quantidade: 3,
