@@ -1,8 +1,12 @@
 package main
 
 import (
+	"errors"
+
 	"github.com/Celfer3108/DigiPort/model"
 )
+
+var product []model.Produto
 
 func catalog() []model.Produto {
 	livros := []model.Produto{
@@ -47,7 +51,6 @@ func catalog() []model.Produto {
 			Valor:      49.90,
 			Imagem:     "livro.jpg",
 		},
-
 		{
 			Nome:       "Ken Follet",
 			Autor:      "Nunca",
@@ -61,4 +64,24 @@ func catalog() []model.Produto {
 	}
 	return livros
 
+}
+
+func buscaPorNome(nome string) []model.Produto {
+	resultado := []model.Produto{}
+
+	for _, produto := range product {
+		if produto.Nome == nome {
+			resultado = append(resultado, produto)
+		}
+	}
+	return resultado
+}
+func registerbooks(books model.Produto) error {
+	for _, produto := range product {
+		if books.ID == produto.ID {
+			return errors.New("")
+		}
+	}
+	product = append(product, books)
+	return nil
 }
